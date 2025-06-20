@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page1</title>
+    <style>
+        body{
+            font-family: Arial,  sans-serif;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100pv;
+            margin: 0;
+        }
+        .login-container{
+            position: absolute;
+            background-color: #fff;
+            padding:40px ;
+            box-shadow: 0 0 10px rgb(196, 76, 76);
+            width: 300px;
+            top:30%;
+        }
+        .login-container{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"]
+        .login conatainer input[type="password"]{
+            width: 100%;
+            padding: 10px;
+            margin:10px,0;
+            border:1px solid#ccc;
+            border-radius: 5p
+
+        }
+        .login-container input[type="submit"]{
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(23, 172, 192);
+            border-radius: 5px;
+            border: #ff8800;
+            color:#fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container input [type="submit"]{
+         background-color: chartreuse;
+         }
+         .login.container.register-link{
+            text-align: center;
+            margin-top: 10px;
+         }
+         .login.container.register-link a{
+            color:#007bff;
+            text-decoration: none;
+         }
+         .login.container.register-link a:hover{
+            text-decoration: underline;
+         }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>login</h1>
+        <form action="/login"method="post">
+            <lebel for="username">Username</lebel>
+            <input type="text" id ="username" name="username "required>
+
+            <br  > <p>
+             <label for="password">Password</label>
+            <input type="text" id="Password" name="Password"required></p>
+             <br>
+
+             <input type="submit"value="Login">
+        </form>
+        <div class="register-link">
+            <p>Dont have an account?  <a href="sign Up.html">  sign up here </a></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body{
+            font-family:Arial, sans-serif;
+            background-color: chartreuse;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            height: 100vh;
+            margin: 0;
+            font-size:x-large;
+        }
+        .signup-container{
+            background-color: #fff;
+            padding :20px;
+            border-radius:8px;
+            box-shadow:cyan;
+            width: 300px;
+        }
+        .signup-container h1{
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .signup-container input{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border:1px solid#ccc;
+            border-radius:4px;
+            font-size: 16px;
+        }
+        .signup-container button{
+            width: 100%;
+            padding:10px;
+            background-color: blue;
+            border:none;
+            border-radius:4px;
+            color:#fff;
+            font-size:16px;
+        }
+        .signup-container p {
+         text-align: center;
+         margin-bottom: none;
+        }
+        .signup-container a{
+            text-decoration: none;
+            color:rgb(127, 146, 255);
+        }
+        .signup-container a :hover{
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="Signup-container">
+        
+        <h1>Sign Up</h1>
+        <form id="signupform"action="/signup"method="post">
+            <input type="text"name="username" placeholder="Username"required><br>
+            <input type="email"name="email" placeholder="Email" required><br>
+            <input type="password"name="password" placeholder="Password"required><br>
+            <input type="password"name="password" placeholder="Confirm Password"required><br>
+            <button type="Sign Up">Sign Up</button>
+
+        </form>
+        <p>Already have an account? <a href="/login"login></a></p>
+    </div>
+</body>
+</html>
